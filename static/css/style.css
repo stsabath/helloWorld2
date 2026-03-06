@@ -1,7 +1,7 @@
 
 /* Style for all paragraphs */
 p {
-    color: lightblue;
+    color: blue;
     font-size: 14px;
 }
 
@@ -18,7 +18,7 @@ table {
 }
 
 <p id="third-paragraph">
-This is an additional paragraph added for styling using a CSS id selector.
+These are all located in the DMV area.
 </p>
 
 /* Styling specific paragraph using ID */
@@ -35,5 +35,5 @@ This is an additional paragraph added for styling using a CSS id selector.
 /* Logo image styling */
 img.logo {
     width: 200px;
-    height: 200px;
+    height: 100px;
 }
