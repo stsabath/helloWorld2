@@ -1,0 +1,39 @@
+
+/* Style for all paragraphs */
+p {
+    color: lightblue;
+    font-size: 14px;
+}
+
+/* Style for all level 2 headers */
+h2 {
+    color: darkblue;
+    text-align: center;
+}
+
+/* Table styling */
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+<p id="third-paragraph">
+This is an additional paragraph added for styling using a CSS id selector.
+</p>
+
+/* Styling specific paragraph using ID */
+#third-paragraph {
+    color: green;
+    font-weight: bold;
+}
+
+/* Highlight class */
+.highlight {
+    background-color: lightyellow;
+}
+
+/* Logo image styling */
+img.logo {
+    width: 200px;
+    height: 200px;
+}
