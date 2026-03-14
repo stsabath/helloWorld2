@@ -36,19 +36,20 @@ def contact():
 
     if request.method == 'POST':
 
-        first_name = request.form.get('first_name')
-        last_name = request.form.get('last_name')
-        email = request.form.get('email')
-        message = request.form.get('message')
+        print('First name entered: ' + request.form.get('first_name'))
+        print('Last name entered: ' + request.form.get('last_name'))
+        print('Email entered: ' + request.form.get('email'))
 
-        return render_template(
-            "contact.html",
-            submitted=True,
-            first_name=first_name,
-            last_name=last_name,
-            email=email,
-            message=message
-        )
+        if request.form.get('agree_check'):
+            print('Agree to be contacted entered: ' + request.form.get('agree_check'))
+
+        return render_template('contact.html', form_submitted=True)
+
+
+    else:
+        return render_template('contact.html')
+
+
 
     return render_template("contact.html")
 
